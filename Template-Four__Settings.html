@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- Font Awsome Library -->
+    <link rel="stylesheet" href=".//CSS/all.min.css">
+    <!-- Render Page Normally -->
+    <link rel="stylesheet" href=".//CSS/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- My First Framework -->
+    <link rel="stylesheet" href="./CSS/my-framework.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./CSS/template_four.css">
+</head>
+<body>
+    <div class="settings d-flex p-relative">
+        <div class="sidebar p-absolute h-100p">
+            <h3 class="sidebar__logo">allam</h3>
+            <ul class="pages-names">
+                <li class="dashboard-page">
+                    <a href="./Template-Four__Dashboard - Copy.html" title="Dashboard">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <div>dashboard</div>
+                    </a>
+                </li>
+                <li class="settings-page">
+                    <a class="active" href="./Template-Four__Settings.html" title="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                        <div>settings</div>
+                    </a>
+                </li>
+                <li class="profile-page">
+                    <a href="" title="Profile">
+                        <i class="fa-solid fa-user"></i>
+                        <div>profile</div>
+                    </a>
+                </li>
+                <li class="projects-page">
+                    <a href="" title="Projects">
+                        <i class="fa-solid fa-list-check"></i>
+                        <div>projects</div>
+                    </a>
+                </li>
+                <li class="courses-page">
+                    <a href="" title="Courses">
+                        <i class="fa-brands fa-discourse"></i>
+                        <div>courses</div>
+                    </a>
+                </li>
+                <li class="friends-page">
+                    <a href="" title="Friends">
+                        <i class="fa-solid fa-user-group"></i>
+                        <div>friends</div>
+                    </a>
+                </li>
+                <li class="files-page">
+                    <a href="" title="Files">
+                        <i class="fa-solid fa-file"></i>
+                        <div>files</div>
+                    </a>
+                </li>
+                <li class="plans-page">
+                    <a href="" title="Plans">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                        <div>plans</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-100p">
+            <div class="nav">
+                <form action="">
+                    <input type="search" name="" id="" placeholder="Type a keyword">
+                </form>
+                <div class="right-nav">
+                    <a href="">
+                        <i class="fa-regular fa-bell"></i>
+                    </a>
+                    <a href="">
+                        <img src="./Images/welcome-avatar.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="settings-container">
+                <div class="settings__title container-title">⚙️ settings</div>
+                <div class="settings__boxs container-grid">
+                    <div class="settings__site-control widget">
+                        <div class="box-heading">
+                            <h3>site control</h3>
+                            <p>control website when needed maintenance</p>
+                        </div>
+                        <div class="control-toggle">
+                            <div class="left-column">
+                                <h5>website control</h5>
+                                <p>open/close website</p>
+                            </div>
+                            <!-- Start Toggle Component -->
+                            <label class="toggle" for="site-control">
+                                <input class="toggle-checkbox" type="checkbox" name="open-close-website" id="site-control">
+                                <div class="toggle-shift"></div>
+                            </label>
+                            <!-- End Toggle Component -->
+                        </div>
+                        <div class="form__message">
+                            <form action="">
+                                <textarea name="" id="" placeholder="Message Of The Reason"></textarea>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="settings__general-info widget">
+                        <div class="box-heading">
+                            <h3>general info</h3>
+                            <p>general information about your account</p>
+                        </div>
+                        <div class="info__form-container">
+                            <div class="first-name info-box">
+                                <label for="first">first name</label>
+                                <input type="text" name="last-name" id="first" placeholder="First Name">
+                            </div>
+                            <div class="last-name info-box">
+                                <label for="last">last name</label>
+                                <input type="text" name="last-name" id="last" placeholder="last Name">
+                            </div>
+                            <div class="email info-box">
+                                <label for="mail">email</label>
+                                <div>
+                                    <input type="email" name="mail" id="last" placeholder="o@nn.sa" disabled>
+                                    <a class="change-button" href="">change</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings__security-info widget">
+                        <div class="box-heading">
+                            <h3>security info</h3>
+                            <p>security information about your account</p>
+                        </div>
+                        <div class="security-container">
+                            <div class="pass security-box">
+                                <div class="left-column">
+                                    <h5>password</h5>
+                                    <p>last change on 25/10/2025</p>
+                                </div>
+                                <a class="change-button" href="">change</a>
+                            </div>
+                            <div class="authentication security-box">
+                                <div class="left-column">
+                                    <h5>two-factor authentication</h5>
+                                    <p>enable/disable feature</p>
+                                </div>
+                                <!-- Start Toggle Component -->
+                                <label class="toggle" for="security">
+                                    <input class="toggle-checkbox" type="checkbox" name="open-close-website" id="security">
+                                    <div class="toggle-shift"></div>
+                                </label>
+                                <!-- End Toggle Component -->
+                            </div>
+                            <div class="devices security-box">
+                                <div class="left-column">
+                                    <h5>devices</h5>
+                                    <p>check the login devices list</p>
+                                </div>
+                                <a class="change-button">device</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings__social-info widget">
+                        <div class="box-heading">
+                            <h3>social info</h3>
+                            <p>social media information</p>
+                        </div>
+                        <div class="social-container">
+                            <div class="twitter social-box">
+                                <div>
+                                    <i class="fa-brands fa-twitter fa-fw"></i>
+                                </div>
+                                <p>twitter username</p>
+                            </div>
+                            <div class="facebook social-box">
+                                <div>
+                                    <i class="fa-brands fa-facebook fa-fw"></i>
+                                </div>
+                                <p>facebook username</p>
+                            </div>
+                            <div class="youtube social-box">
+                                <div>
+                                    <i class="fa-brands fa-youtube fa-fw"></i>
+                                </div>
+                                <p>youtube username</p>
+                            </div>
+                            <div class="linkedin social-box">
+                                <div>
+                                    <i class="fa-brands fa-linkedin fa-fw"></i>
+                                </div>
+                                <p>linkedin username</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings__widgets-control widget">
+                        <div class="box-heading">
+                            <h3>widgets control</h3>
+                            <p>show/hide widgets</p>
+                        </div>
+                        <div class="control-container">
+                            <form action="">
+                                <div class="checkbox-box">
+                                    <input type="checkbox" name="" id="draft" checked>
+                                    <label for="draft">quick draft</label>
+                                </div>
+                                <div class="checkbox-box">
+                                    <input type="checkbox" name="" id="targets" checked>
+                                    <label for="targets">yearly targets</label>
+                                </div>
+                                <div class="checkbox-box">
+                                    <input type="checkbox" name="" id="stats" checked>
+                                    <label for="stats">tickets statistics</label>
+                                </div>
+                                <div class="checkbox-box">
+                                    <input type="checkbox" name="" id="news" checked>
+                                    <label for="news">latest news</label>
+                                </div class="checkbox-box">
+                                <div class="checkbox-box">
+                                    <input type="checkbox" name="" id="tasks">
+                                    <label for="tasks">latest tasks</label>
+                                </div>
+                                <div class="checkbox-box">
+                                    <input type="checkbox" name="" id="top" checked>
+                                    <label for="top">top search items</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="settings__backup-manager widget">
+                        <div class="box-heading">
+                            <h3>backup manager</h3>
+                            <p>control backup time & location</p>
+                        </div>
+                        <div class="checkboxs-container">
+                            <form action="">
+                                <div class="radio-box">
+                                    <input type="radio" name="period" id="daily" checked>
+                                    <label for="daily">daily</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="period" id="weekly">
+                                    <label for="weekly">weekly</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="period" id="monthly">
+                                    <label for="monthly">monthly</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="backup-options">
+                            <a class="option">
+                                <i class="fa-solid fa-hard-drive"></i>
+                                <span>megaman</span>
+                            </a>
+                            <a class="option active">
+                                <i class="fa-solid fa-hard-drive"></i>
+                                <span>zero</span>
+                            </a>
+                            <a class="option">
+                                <i class="fa-solid fa-hard-drive"></i>
+                                <span>sigma</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
