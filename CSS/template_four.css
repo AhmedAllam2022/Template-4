@@ -5,7 +5,7 @@
     margin: 0;
 }
 ::-webkit-scrollbar {
-	width: 30px;
+	width: 10px;
 }
 ::-webkit-scrollbar-track {
 	background-color: white;
@@ -861,8 +861,14 @@ div.dashboard__social-media div.social-container div.social:nth-child(4) span {
 }
 /* end social media stats widget */
 /* start projects widget */
+div.dashboard__projects div.table-wrapper {
+	width: 100%;
+	overflow-x: auto;
+}
+
 div.dashboard__projects table {
 	border-collapse: collapse;
+	min-width: 700px;
 	width: 100%;
 	border: 1px solid #eee;
 	font-size: 10px;
@@ -883,6 +889,8 @@ div.dashboard__projects table th, div.dashboard__projects table td {
 div.dashboard__projects table th {
 	background: #eeeeee;
 	height: 20px;
+	position: sticky; 
+	top: 0;
 }
 div.dashboard__projects table tr td:last-child div {
 	margin-left: auto;
